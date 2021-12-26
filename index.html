@@ -10,13 +10,71 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- link css files -->
     <link rel="stylesheet" href="./assets/css/app.css">
-    <title>Document</title>
+    <title>Weather-App</title>
 </head>
 
 <body>
-    <header></header>
-    <section></section>
-    <footer></footer>
+    <div id="root">
+        <div class="wellcome">
+            <div class="wellcome__icon"><img src="./assets/images/iconweather.svg" alt="Icon Weather"></div>
+            <div class="wellcome__content">
+                <div class="wellcome__content__title">Find your weather predictions in your city</div>
+                <div class="wellcome__content__span">Easy steps to predict the weather and make your day easier</div>
+                <button class="wellcome__content__button">Get Start</button>
+            </div>
+        </div>
+        <div class="app">
+            <div class="app__header">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+                <p>search for city</p>
+            </div>
+            <div class="app__search">
+                <ion-icon name="search-outline"></ion-icon>
+                <input id="search" type="text" placeholder="Search...">
+            </div>
+            <div class="app__result">
+                <div class="result__top">
+                    <div class="result__top__left">
+                        <div class="city--name" id="city--name"></div>
+                        <div class="city--temperature" id="city--temperature"></div>
+                    </div>
+                    <div class="result__top__right">
+                        <img src="./assets/images/iconweather.svg" alt="">
+                    </div>
+                </div>
+                <div class="result__bottom">
+                    <div class="humidity">
+                        <img src="./assets/images/humidity.svg" alt="">
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="windspeed">
+                        <img src="./assets/images/windspeed.svg" alt="">
+                        <p id="windspeed"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="app__navicative">
+                <ul>
+                    <li><a href="#!">
+                            <ion-icon name="planet-outline"></ion-icon>
+                        </a></li>
+                    <li><a href="#!">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a></li>
+                    <li><a href="#!">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="app__mode">
+                <p>Choose mode</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
     <script src="./assets/script/app.js"></script>
 </body>
 

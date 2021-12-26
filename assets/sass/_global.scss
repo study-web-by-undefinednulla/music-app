@@ -1,0 +1,29 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #dfdafa, #f2ecee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#root {
+    font-family: var(--primary-font);
+    padding-top: 40px;
+    width: 360px;
+    height: 775px;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        opacity: 0.7;
+        z-index: -1;
+        background-color: var(--background-color);
+        content: "";
+        filter: blur(1px);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

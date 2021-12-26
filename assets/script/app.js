@@ -7,6 +7,7 @@ const app = {
             if (searchValue != '') {
                 let data = await fetch(apiURL).then((data) => data.json())
                 console.log(data)
+                //xu ly du lieu sai
                 if (data.cod == 200) {
                     document.getElementById('city--name').textContent = data.name
                     document.getElementById('city--temperature').textContent = Math.round(data.main.temp - 273.15) + '°C'

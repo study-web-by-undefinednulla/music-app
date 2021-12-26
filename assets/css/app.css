@@ -192,6 +192,10 @@ body {
     left: 0;
     right: 0; }
 
+@media screen and (max-width: 375px) {
+  #root {
+    width: 100vw;
+    height: 100vh; } }
 .wellcome {
   display: flex;
   justify-content: center;
